@@ -1,0 +1,23 @@
+clc         %limpiar el command window
+close all   %Cierra ventana previamente abierta 
+clear       %Borrar archivos de memoria 
+
+imagen = imread('imagen2.jpg');  
+imagen = rgb2gray(imagen);
+
+imagen2 = imagen(1:fsm:end,1:fsm:end);
+
+function vectorHistograma = fHistograma(ImagenEntrada)
+        %Argm de Salida   =  nombreFn(args Entrada)
+        vectorHistograma = zeros(1,256);
+        
+        [fila,col] =size(ImagenEntrada);
+        
+        for c = 1:fila
+            for r = 1:col
+                
+            end
+        end
+
+
+end
