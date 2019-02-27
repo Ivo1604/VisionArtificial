@@ -1,0 +1,14 @@
+clc         %limpiar el command window
+close all   %Cierra ventana previamente abierta 
+clear       %Borrar archivos de memoria 
+
+imagen = imread('imagen.jpg');  
+imagen = rgb2gray(imagen);
+
+vm = mean (mean(imagen));
+e = s+b(s+b(imagen));
+
+umbral = vm + (2*e);
+
+Resultado = imagen*0;
+Resultado = 
